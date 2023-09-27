@@ -1,0 +1,42 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# vim
+*.swp
+*~
+
+# patch
+*.rej
+*.orig
+
+config.h
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# slock
+slock
+config.h
+*.rej
+*.orig
+*.tar
+*.gz
+*.xz
