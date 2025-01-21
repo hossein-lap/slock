@@ -1,3 +1,6 @@
+/* user and group to drop privileges to */
+static const char *group = "users";
+
 #include "colors/default.h"
 
 static char* background_image = "/home/hos/.local/share/dwm/background.sl";
