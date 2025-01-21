@@ -22,8 +22,6 @@
 *.rej
 *.orig
 
-config.h
-
 # Executables
 *.exe
 *.out

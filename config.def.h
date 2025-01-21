@@ -1,14 +1,17 @@
 #include "colors/default.h"
 
+static char* background_image = "/home/hos/.local/share/dwm/background.sl";
+
 /*
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "color0",       STRING,  &colorname[BACKGROUND] },
-		{ "color8",       STRING,  &colorname[INIT] },
-		{ "color4",       STRING,  &colorname[INPUT] },
-		{ "color1",       STRING,  &colorname[FAILED] },
-		{ "color3",       STRING,  &colorname[CAPS] },
+		{ "slock.color0",  STRING,  &colorname[BACKGROUND] },
+		{ "slock.color8",  STRING,  &colorname[INIT] },
+		{ "slock.color4",  STRING,  &colorname[INPUT] },
+		{ "slock.color1",  STRING,  &colorname[FAILED] },
+		{ "slock.color3",  STRING,  &colorname[CAPS] },
+		{ "slock.image",   STRING,  &background_image },
 };
 
 /* treat a cleared input like a wrong password (color) */
