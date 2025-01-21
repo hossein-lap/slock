@@ -255,11 +255,11 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 			color = len ? (caps ? CAPS : INPUT) : (failure || failonclear ? FAILED : INIT);
 			if (running && oldc != color) {
 				for (screen = 0; screen < nscreens; screen++) {
+					drawlogo(dpy, locks[screen], color);
                     if (locks[screen]->bgmap)
                         XSetWindowBackgroundPixmap(dpy, locks[screen]->win, locks[screen]->bgmap);
                     else
                         XSetWindowBackground(dpy, locks[screen]->win, locks[screen]->colors[0]);
-					drawlogo(dpy, locks[screen], color);
 				}
 				oldc = color;
 			}
